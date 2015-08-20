@@ -1,5 +1,8 @@
+#' @author Amey Sanjay Mahajan
+#' 
+#' Function returning the hospital giving the best results with respect to outcomes in all the states for the given outcome
+#' 
 best <- function(state,outcome){
-  #Heart Attack = 11, Heart failure = 17,Pneumonia -23
   wholeData <- read.csv("outcome-of-care-measures.csv",colClasses = "character")
   arr <- array()
   minimum <- 0
